@@ -1,0 +1,14 @@
+version: "3"
+services:
+  db:
+    build: ./sql
+    container_name: mysql57
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: "true"
+      MYSQL_DATABASE: "testdb"
+      MYSQL_USER: "root"
+      TZ: "Asia/Tokyo"
+    volumes:
+      - ./sql/init:/docker-entrypoint-initdb.d
+    ports:
+      - 3306:3306
