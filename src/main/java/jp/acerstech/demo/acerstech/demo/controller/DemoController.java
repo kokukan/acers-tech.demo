@@ -16,10 +16,10 @@ public class DemoController {
     @Autowired
     DemoService demoService;
 
-    @GetMapping("/getUserList/{departmentNo}")
-    public String  getUserList(@PathVariable("departmentNo") String departmentNo, Model model) {
+    @GetMapping("/getUserList/{department}")
+    public String  getUserList(@PathVariable("department") String department, Model model) {
 
-       List<UserInfo> users = demoService.getUserInfoList(departmentNo);
+       List<UserInfo> users = demoService.getUserInfoList(department);
        model.addAttribute("userList",users);
         return "userlist";
     }

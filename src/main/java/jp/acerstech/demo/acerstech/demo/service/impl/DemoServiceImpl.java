@@ -14,8 +14,8 @@ public class DemoServiceImpl implements DemoService {
     @Autowired
     UserRepository userRepository;
     @Override
-    public List<UserInfo> getUserInfoList(String departmentNo) {
+    public List<UserInfo> getUserInfoList(String department) {
 
-        return userRepository.findByDepartmentNo(departmentNo);
+        return userRepository.findByDepartment(department);
     }
 }

@@ -8,5 +8,5 @@ import java.util.List;
 @Repository
 public interface UserRepository extends JpaRepository<UserInfo,String> {
 
-     List<UserInfo>  findByDepartmentNo(String departmentNo);
+     List<UserInfo>  findByDepartment(String department);
 }

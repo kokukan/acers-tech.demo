@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap.css"></link>
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap-grid.css"></link>
+    <link rel="stylesheet" type="text/css" href="./static/css/bootstrap-reboot.css"></link>
+</head>
+<body>
+<div id="container">
+    <div id="searchArea">
+        <form action="#" th:action="@{/getUserList}" method="post">
+            <table>
+
+                <tr>
+                    <td>部署コード</td>
+
+                    <td class="padding16">
+                        <input type="text" name="departmentNo" class="sd-text-input sd-u-w70p sd-u-inline-block"/>
+
+                    </td>
+                    <td class="padding16">
+                        <input type="submit" class="btn btn-primary" value="検索"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div id="main">
+        <table border="0" class="table table-striped">
+            <thead>
+                <th scope="col">ユーザID</th>
+                <th scope="col">ユーザ名</th>
+                <th scope="col">年齢</th>
+                <th scope="col">所属部署</th>
+            </thead>
+            <tbody th:each="user:${userList}">
+                <tr>
+                    <td th:text="${user.userId}"></td>
+                    <td th:text="${user.name}"></td>
+                    <td th:text="${user.age}"></td>
+                    <td th:text="${user.department}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
