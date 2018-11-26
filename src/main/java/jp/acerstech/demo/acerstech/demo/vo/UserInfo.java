@@ -1,9 +1,13 @@
 package jp.acerstech.demo.acerstech.demo.vo;
 
 
-import lombok.Setter;
+import lombok.*;
 
 @Setter
+@Getter
+@Builder
+@AllArgsConstructor
+@ToString
 public class UserInfo {
 
     private String userId;
