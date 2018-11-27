@@ -6,5 +6,7 @@ CREATE TABLE if not exists testdb.users  (
  age  int(3),
  department varchar(50),
  PRIMARY KEY (user_id)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+);
 insert into users values('001','user001',25,'システム開発部');
+insert into users values('002','user002',25,'システム開発部');
+insert into users values('003','user003',25,'営業部');
