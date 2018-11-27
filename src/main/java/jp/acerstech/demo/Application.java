@@ -1,4 +1,4 @@
-package jp.acerstech.demo.acerstech.demo;
+package jp.acerstech.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

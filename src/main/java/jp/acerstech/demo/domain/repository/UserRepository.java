@@ -1,6 +1,6 @@
-package jp.acerstech.demo.acerstech.demo.repository;
+package jp.acerstech.demo.domain.repository;
 
-import jp.acerstech.demo.acerstech.demo.repository.entity.Users;
+import jp.acerstech.demo.domain.entity.Users;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

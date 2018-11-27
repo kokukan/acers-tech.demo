@@ -1,4 +1,4 @@
-package jp.acerstech.demo.acerstech.demo.dto;
+package jp.acerstech.demo.dto;
 
 
 import lombok.*;

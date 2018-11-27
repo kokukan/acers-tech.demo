@@ -1,10 +1,10 @@
-package jp.acerstech.demo.acerstech.demo.service.impl;
+package jp.acerstech.demo.domain.service.impl;
 
-import jp.acerstech.demo.acerstech.demo.dto.SearchConditonDto;
-import jp.acerstech.demo.acerstech.demo.repository.UserRepository;
-import jp.acerstech.demo.acerstech.demo.repository.entity.Users;
-import jp.acerstech.demo.acerstech.demo.service.DemoService;
-import jp.acerstech.demo.acerstech.demo.dto.UserInfo;
+import jp.acerstech.demo.dto.SearchConditonDto;
+import jp.acerstech.demo.domain.repository.UserRepository;
+import jp.acerstech.demo.domain.entity.Users;
+import jp.acerstech.demo.domain.service.DemoService;
+import jp.acerstech.demo.dto.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;

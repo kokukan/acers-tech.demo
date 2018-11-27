@@ -1,4 +1,4 @@
-package jp.acerstech.demo.acerstech.demo.repository.entity;
+package jp.acerstech.demo.domain.entity;
 
 
 import lombok.Getter;

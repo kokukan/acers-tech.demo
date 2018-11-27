@@ -1,8 +1,8 @@
-package jp.acerstech.demo.acerstech.demo.controller;
+package jp.acerstech.demo.controller;
 
-import jp.acerstech.demo.acerstech.demo.dto.SearchConditonDto;
-import jp.acerstech.demo.acerstech.demo.service.DemoService;
-import jp.acerstech.demo.acerstech.demo.dto.UserInfo;
+import jp.acerstech.demo.dto.SearchConditonDto;
+import jp.acerstech.demo.domain.service.DemoService;
+import jp.acerstech.demo.dto.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,7 +18,7 @@ public class DemoController {
     @Autowired
     DemoService demoService;
 
-    @GetMapping("/index")
+    @GetMapping("/")
     public String getAllUsers(Model model) {
 
         List<UserInfo> users = demoService.getAll();

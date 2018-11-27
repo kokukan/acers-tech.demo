@@ -1,4 +1,4 @@
-package jp.acerstech.demo.acerstech.demo;
+package jp.acerstech.demo;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
