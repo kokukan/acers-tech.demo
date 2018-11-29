@@ -1,15 +1,13 @@
-package jp.acerstech.demo.controller;
+package jp.acerstech.demo.application;
 
-import jp.acerstech.demo.dto.SearchConditonDto;
+import java.util.List;
+import jp.acerstech.demo.domain.model.UserInfo;
 import jp.acerstech.demo.domain.service.DemoService;
-import jp.acerstech.demo.dto.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
-
-import java.util.List;
 import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
@@ -19,18 +17,20 @@ public class DemoController {
     DemoService demoService;
 
     @GetMapping("/")
-    public String getAllUsers(Model model) {
+    public String getAllUsers(Model model,@ModelAttribute DemoForm form) {
 
         List<UserInfo> users = demoService.getAll();
-        model.addAttribute("userList", users);
+        form.setUserList(users);
+        model.addAttribute("demoForm", form);
         return "userlist";
     }
 
     @PostMapping("/getUserList")
-    public String getUserList(Model model, @ModelAttribute SearchConditonDto dto) {
+    public String getUserList(Model model, @ModelAttribute DemoForm form) {
 
-        List<UserInfo> users = demoService.getUserInfoList(dto);
-        model.addAttribute("userList", users);
+        List<UserInfo> users = demoService.getUserInfoList(form.getSearchConditionDto());
+        form.setUserList(users);
+        model.addAttribute("demoForm", form);
         return "userlist";
 
     }

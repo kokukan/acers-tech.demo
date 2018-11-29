@@ -1,4 +1,4 @@
-package jp.acerstech.demo.dto;
+package jp.acerstech.demo.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +9,7 @@ import lombok.Setter;
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
-public class SearchConditonDto {
+public class SearchConditionDto {
 
     private String department;
     private String userId;

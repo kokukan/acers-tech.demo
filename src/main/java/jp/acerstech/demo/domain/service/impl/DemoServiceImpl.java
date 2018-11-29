@@ -1,10 +1,10 @@
 package jp.acerstech.demo.domain.service.impl;
 
-import jp.acerstech.demo.dto.SearchConditonDto;
+import jp.acerstech.demo.domain.model.SearchConditionDto;
 import jp.acerstech.demo.domain.repository.UserRepository;
-import jp.acerstech.demo.domain.entity.Users;
+import jp.acerstech.demo.infrastructure.entity.Users;
 import jp.acerstech.demo.domain.service.DemoService;
-import jp.acerstech.demo.dto.UserInfo;
+import jp.acerstech.demo.domain.model.UserInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
@@ -20,7 +20,7 @@ public class DemoServiceImpl implements DemoService {
     UserRepository userRepository;
 
     @Override
-    public List<UserInfo> getUserInfoList(SearchConditonDto dto) {
+    public List<UserInfo> getUserInfoList(SearchConditionDto dto) {
 
 
         List<Users> users = userRepository.findAll(Specification.where(((root, query, criteriaBuilder) ->

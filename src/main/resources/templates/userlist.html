@@ -10,14 +10,14 @@
 <body>
 <div id="container" class="container-fluid">
     <div id="searchArea">
-        <form action="#" th:action="@{/getUserList}" method="post">
+        <form  th:action="@{/getUserList}" method="post" th:object="${demoForm}">
             <table>
 
                 <tr>
                     <td>部署名</td>
 
                     <td class="padding16">
-                        <input type="text" name="department" class="form-control"/>
+                        <input type="text" th:field="*{searchConditionDto.department}"  class="form-control"/>
 
                     </td>
                     <td class="padding16">
@@ -35,7 +35,7 @@
                 <th scope="col">年齢</th>
                 <th scope="col">所属部署</th>
             </thead>
-            <tbody th:each="user:${userList}">
+            <tbody th:each="user:${demoForm.userList}">
                 <tr>
                     <th scope="col" th:text="${user.userId}"></th>
                     <td th:text="${user.name}"></td>

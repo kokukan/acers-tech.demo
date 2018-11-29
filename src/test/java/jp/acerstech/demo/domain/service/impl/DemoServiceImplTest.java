@@ -2,9 +2,9 @@ package jp.acerstech.demo.domain.service.impl;
 
 import java.util.ArrayList;
 import java.util.List;
-import jp.acerstech.demo.domain.entity.Users;
+import jp.acerstech.demo.infrastructure.entity.Users;
 import jp.acerstech.demo.domain.repository.UserRepository;
-import jp.acerstech.demo.dto.UserInfo;
+import jp.acerstech.demo.domain.model.UserInfo;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.InjectMocks;

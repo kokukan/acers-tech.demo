@@ -14,7 +14,7 @@ import org.springframework.util.StopWatch;
 public class ApplicationLogger {
 
 
-    @Around("execution(* jp.acerstech.demo.controller.*.*(..))")
+    @Around("execution(* jp.acerstech.demo.application.*.*(..))")
     public Object logApplication(ProceedingJoinPoint joinPoint) throws  Throwable {
 
         StopWatch  stopWatch = new StopWatch();

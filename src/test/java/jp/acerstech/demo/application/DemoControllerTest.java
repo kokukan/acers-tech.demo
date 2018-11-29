@@ -1,4 +1,4 @@
-package jp.acerstech.demo.controller;
+package jp.acerstech.demo.application;
 
 import org.junit.Before;
 import org.junit.Test;
