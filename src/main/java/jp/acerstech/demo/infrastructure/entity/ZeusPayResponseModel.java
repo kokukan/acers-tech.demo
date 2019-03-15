@@ -8,23 +8,21 @@ import javax.xml.bind.annotation.XmlAttribute;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
-/**
- * トークン取得用リクエストモデルクラス
- * テストのため一時的なものであり、将来削除する予定
- */
 @Data
-@XmlRootElement(name="request")
+@XmlRootElement(name="response")
 @XmlAccessorType(XmlAccessType.FIELD)
-public class ZeusGetTokenRequestModel {
+public class ZeusPayResponseModel {
 
     @XmlAttribute(name="service")
     private String service;
     @XmlAttribute(name="action")
     private String action;
-    @XmlElement(name="authentication")
-    private Authentication authentication;
-    @XmlElement(name = "card")
-    private Card card;
-
-
+    @XmlElement(name="result")
+    private BaseResult result;
+    @XmlElement(name="order_number")
+    private String orderNumber;
+    @XmlElement(name="am_data")
+    private AmData amData;
+    @XmlElement(name="addition_value")
+    private AdditionValue additionValue;
 }
