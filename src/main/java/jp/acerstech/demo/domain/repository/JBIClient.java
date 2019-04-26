@@ -1,7 +1,4 @@
-package jp.co.dyn.api.repository.client;
 
-import jp.co.dyn.api.repository.client.model.jbi.JBIRequestModel;
-import jp.co.dyn.api.repository.client.model.jbi.JBIResponseModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.RequiredArgsConstructor;
