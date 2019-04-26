@@ -1,25 +1,7 @@
-package jp.co.dyn.api.repository.client;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jp.co.dyn.api.repository.client.model.gmo.GmoAlterTranRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoAlterTranResponseModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoChangeTranRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoChangeTranResponseModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoEntryTranRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoEntryTranResponseModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoExecTranRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoExecTranResponseModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoGetTokenRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoGetTokenResponseModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoMemRefRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoMemRefResponseModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoSaveCardRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoSaveCardResponseModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoSaveMemberRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoSaveMemberResponseModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoSecureTranRequestModel;
-import jp.co.dyn.api.repository.client.model.gmo.GmoSecureTranResponseModel;
+
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
