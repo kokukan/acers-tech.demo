@@ -1,6 +1,4 @@
-package jp.co.dyn.api.repository.client;
 
-import jp.co.dyn.api.repository.client.model.zeus.*;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
